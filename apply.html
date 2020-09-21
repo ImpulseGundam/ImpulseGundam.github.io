@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="club.css">
+    <meta charset="UTF-8">
+    <title>index</title>
+    <header>
+        <h1 style="text-align:center">Home</h1>
+    </header>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="active"><a href="clubActivitiesPage.html">Club Activities</a></li>
+			<li><a href="loginPage.html">Login</a></li>
+			<li><a href="apply.html">Apply</a></li>
+		</ul>
+	</nav>
+	<button onclick="show()">Show</button>
+	<dialog id="showNav">
+	&lt;nav&gt;
+		&lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="clubActivitiesPage.html"&gt;Club Activities&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="loginPage.html"&gt;Login&lt;/a&gt;&lt;/li&gt;
+			&lt;li class="active"&gt;&lt;a href="apply.html"&gt;Apply&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+	</dialog>
+	<script>
+		var x = document.getElementById("showNav"); 
+		function showDialog() { 
+			x.show(); 
+		} 
+	</script>
+    <main>
+		<h2>Club Application</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text">
+			<label>Email:</label>
+            <input type="text">
+            <label>Password:</label>
+            <input type="password" value="example" id="passwordInput" required minlength="8" maxlength="16">
+			<label>Experience:</label>
+			<select>
+				<option>None</option>
+				<option>Beginner</option>
+				<option>Intermediate</option>
+				<option>Experienced</option>
+			</select>
+            <button>Submit</button>
+        </form>
+    </main>
+	<section id = "ThanksDialog">
+	<h2>Thank you for your application!</h2>
+	<p>Name:
+	Email:
+	Password:
+	Experience:</p>
+	</section>
+</body>
+<footer>
+    © 2020 Jonathan Vadil
+</footer>
+</html>

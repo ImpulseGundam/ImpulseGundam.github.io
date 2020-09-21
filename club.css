@@ -60,3 +60,15 @@ footer {
 	text-align: center;
 	font-size: large;
 }
+
+input[type="text"], textarea {
+
+  background-color : #adfeff; 
+
+}
+
+input[type="password"], textarea {
+
+  background-color : #abffc5; 
+
+}
