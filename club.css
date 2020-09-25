@@ -14,13 +14,22 @@ body {
 
 nav {
 	border-style: double;
-	max-width: 200px;
 	background-color: LightSteelBlue;
-	margin-left: 40px;
+	padding: 20px 20px 20px 20px;
+	position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav li {
 	list-style-type: none;
+}
+
+.container{
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-evenly;
 }
 
 img {
@@ -36,6 +45,7 @@ main {
 	margin-right: 40px;
 	background-color: White;
 	border-style: solid;
+	max-width: max-content;
 }
 
 table, th, td {
@@ -71,4 +81,8 @@ input[type="password"], textarea {
 
   background-color : #abffc5; 
 
+}
+
+.application.container{
+	display: grid;
 }

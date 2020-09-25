@@ -10,39 +10,30 @@
 </head>
 <body>
 	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li class="active"><a href="clubActivitiesPage.html">Club Activities</a></li>
-			<li><a href="loginPage.html">Login</a></li>
-			<li><a href="apply.html">Apply</a></li>
-		</ul>
+		<div class="container">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="clubActivitiesPage.html">Club Activities</a></div>
+            <div><a href="loginPage.html">Login</a></div>
+			<div class="active"><a href="apply.html">Apply</a></div>
+        </div>
 	</nav>
-	<button onclick="show()">Show</button>
-	<dialog id="showNav">
-	&lt;nav&gt;
-		&lt;ul&gt;
-            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="clubActivitiesPage.html"&gt;Club Activities&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="loginPage.html"&gt;Login&lt;/a&gt;&lt;/li&gt;
-			&lt;li class="active"&gt;&lt;a href="apply.html"&gt;Apply&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/nav&gt;
-	</dialog>
-	<script>
-		var x = document.getElementById("showNav"); 
-		function showDialog() { 
-			x.show(); 
-		} 
-	</script>
     <main>
+		<div class="container">
 		<h2>Club Application</h2>
         <form>
+			<div>
             <label>Name:</label>
             <input type="text">
+			</div>
+			<div>
 			<label>Email:</label>
             <input type="text">
+			</div>
+			<div>
             <label>Password:</label>
             <input type="password" value="example" id="passwordInput" required minlength="8" maxlength="16">
+			</div>
+			<div>
 			<label>Experience:</label>
 			<select>
 				<option>None</option>
@@ -50,8 +41,12 @@
 				<option>Intermediate</option>
 				<option>Experienced</option>
 			</select>
+			</div>
+			<div>
             <button>Submit</button>
+			</div>
         </form>
+		</div>
     </main>
 	<section id = "ThanksDialog">
 	<h2>Thank you for your application!</h2>
